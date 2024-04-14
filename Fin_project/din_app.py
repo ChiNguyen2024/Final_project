@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 st.subheader('Динамика изменений реальной и номинальной начисленной заработной плате работников организаций по трем видам экономической деятельности в Российской Федерации за 2000-2023 гг.')
 df = pd.read_excel('Fin_project/data/fin_zpl_2023.xlsx')
-df_inf= pd.read_excel('C:\\Users\\sour\\Downloads\\inflation.xlsx')
+df_inf= pd.read_excel('Fin_project/data/inflation.xlsx')
 is_clicked=st.button('Использованные данные')
 if is_clicked:
     st.dataframe(df)
